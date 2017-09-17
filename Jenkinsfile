@@ -41,7 +41,7 @@ node {
         buildReleaseBranch()
     } else if (name == 'master') {
          buildMasterBranch()
-    } else if (name.startsWith('hotfix/')) {
+    } else if (name.startsWith('fork1')) {
         buildHotfixBranch()
     } else {
         error "Don't know what to do with this branch: ${name}"
